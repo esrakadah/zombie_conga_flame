@@ -4,14 +4,14 @@ version: 1.0.0+1
 publish_to: none
 
 environment:
-  sdk: ^3.6.0
+  sdk: '>=3.7.2 <4.0.0'
 
 dependencies:
   audioplayers: ^6.2.0
   bloc: ^9.0.0
   equatable: ^2.0.7
-  flame: ^1.25.0
-  flame_audio: ^2.11.0
+  flame: ^1.16.0
+  flame_audio: ^2.1.8
   flame_behaviors: ^1.2.0
   flutter:
     sdk: flutter
@@ -21,15 +21,18 @@ dependencies:
   google_fonts: ^6.2.1
   intl: ^0.19.0
   window_manager: ^0.4.3
+  shared_preferences: ^2.2.2
+  cupertino_icons: ^1.0.2
 
 dev_dependencies:
   bloc_test: ^10.0.0
-  flame_test: ^1.18.0
+  flame_test: ^1.17.4
   flutter_test:
     sdk: flutter
-  mockingjay: ^1.0.0
+  mockingjay: ^0.5.0
   mocktail: ^1.0.4
   very_good_analysis: ^7.0.0
+  flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
@@ -39,3 +42,4 @@ flutter:
     - assets/audio/
     - assets/images/
     - assets/licenses/poppins/
+    - assets/fonts/

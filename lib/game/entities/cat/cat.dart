@@ -3,8 +3,7 @@ import 'dart:math';
 import 'dart:ui';
 
 import 'package:flame/collisions.dart';
-import 'package:flame/components.dart'
-    hide Timer; // hide Timer is because Flame has Timer and we want Dart one
+import 'package:flame/components.dart' hide Timer; // hide Timer is because Flame has Timer and we want Dart one
 import 'package:flame/effects.dart';
 import 'package:flame_audio/flame_audio.dart';
 import 'package:flutter/material.dart';
@@ -98,7 +97,7 @@ class Cat extends SpriteComponent //
       captured = true;
 
       //
-      FlameAudio.play(Globals.hitCatSound);
+      gameRef.playSound(Globals.hitCatSound);
 
       // When Zombie hits cat, turn Cat green.
       // colorFilter has a built-in shader, so don't need to create a Shader
